@@ -4,20 +4,18 @@
 
 // My solution:
 
-// function removeChar(str){
-//     let toArr = str.split("");
-//     toArr.shift();  //remember shift,pop and all the other methods modifies the original array
-//     toArr.pop();    //so you have to return the original array to see the changes
-//     return toArr.join("") //if you return a variable equal to the .pop() method, it will return the 
-//                           //deleted element of the array
+function removeChar(str){
+     let toArr = str.split("");
+     toArr.shift();  //remember shift,pop and all the other methods modifies the original array
+     toArr.pop();    //so you have to return the original array to see the changes
+     return toArr.join("") //if you return a variable equal to the .pop() method, it will return the 
+                           //deleted element of the array
     
-  
-// };
+}   
+;
 
 // Other interesting solutions:
 
-// function removeChar(str) {
-//     return str.slice(1, -1);
-//   }
-
-/////
+function removeChar(str) {
+    return str.slice(1, -1);
+}
