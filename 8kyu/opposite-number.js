@@ -6,13 +6,17 @@
 // 14: -14
 // -34: 34
 
-// My solution:
+// Second Try solution:
+function opposite(number) {
+  return -number;
+}
+
+// First try solution:
 
 function opposite(number) {
-    if (number !== 0) {
-      return -number;
-    } else{
-      return 0;
-    }
+  if (number !== 0) {
+    return -number;
+  } else {
+    return 0;
   }
-
+}
