@@ -11,5 +11,15 @@
 // My solution:
 
 function disemvowel(str) {
-    return str.replace(/[aeiou]/gi, '');
+  return str.replace(/[aeiou]/gi, "");
+}
+
+// Other solution:
+function disemvowel(str) {
+  let vowels = ["a", "e", "i", "o", "u"];
+  let newStr = str
+    .split("")
+    .filter((letter) => !vowels.includes(letter.toLowerCase()))
+    .join("");
+  return newStr;
 }
